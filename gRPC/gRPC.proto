@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "/time";
+package main;
+
+message time{
+  int64 timeNow = 1;
+}
+message timeRequest{
+  string body = 1;
+}
+
+service getUser{
+  rpc WhoDat (timeRequest) returns (time){}
+}
