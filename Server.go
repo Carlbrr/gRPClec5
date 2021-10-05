@@ -20,7 +20,7 @@ func main() {
 	time.RegisterChatServiceServer(grpcServer, &s)
 
 	if err := grpcServer.Serve(lis); err != nil{
-		log.
+		log.Fatalf("failed to serve...")
 	}
 
 
